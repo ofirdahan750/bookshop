@@ -1,0 +1,95 @@
+body {
+    background: url('https://cdn.pixabay.com/photo/2018/06/17/09/58/book-3480216_960_720.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+* {
+    text-align: center !important;
+    margin: auto !important;
+}
+
+.book-preview {
+    width: 18%;
+    margin: 10px;
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 5px;
+}
+
+img {
+    width: 100px;
+}
+
+.head-line {
+    font-size: 150px;
+    font-family: 'sofia';
+}
+
+button {
+    cursor: pointer;
+}
+
+.delete-btn {
+    float: right;
+}
+
+.card-title {
+    text-transform: capitalize;
+}
+
+.myModal {
+    background-color: #7257b1;
+    padding: 5px;
+    position: absolute;
+    top: 1px;
+    left: 66%;
+    height: 100%;
+    min-width: 100px;
+    text-align: center;
+    animation: roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both
+}
+
+@keyframes roll-in-blurred-left {
+    0% {
+        transform: translateX(-1000px) rotate(-720deg);
+        filter: blur(50px);
+        opacity: 0;
+    }
+    90% {
+        transform: translateX(0) rotate(0deg);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.vendor-list {
+    text-transform: capitalize;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black
+}
+
+table {
+    position: relative;
+    top: 15px
+}
+
+.next-btn {
+    position: relative;
+    top: 55px
+}
+
+@media screen and (max-width: 650px) {
+    .myModal {
+        position: static;
+        height: 100%;
+    }
+}
