@@ -4,6 +4,18 @@ function setLang(lang) {
     gCurrLang = lang;
 }
 
+var gTrans = {
+    title: {
+        en: 'Ofir Book Shop',
+        he: 'חנות הספרים של אופיר'
+    },
+    'drop-down-list': {
+        en: 'language preferences:',
+        he: 'אנא בחר שפה'
+    }
+}
+var gCurrLang = 'en';
+
 function doTrans() {
     var els = document.querySelectorAll('[data-trans]')
     els.forEach(function(el) {

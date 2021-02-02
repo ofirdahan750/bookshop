@@ -14,10 +14,9 @@
 
 <body class="btn-group-sm" onload="onInit()">
 
-    <h1 class="head-line font-effect-fire">Our books</h1>
+    <h1 data-trans="title" class="head-line font-effect-fire">Ofir Book Shop</h1>
     <header>
-        <h1 data-trans="title" class="animated tada">Todo</h1>
-        <h4 data-trans="subtitle">MVC - Model-View-Controller</h4>
+        <h1 data-trans="drop-down-list" class="animated tada">language preferences:</h1>
         <select onchange="onSetLang(this.value)">
             <option value="en">English</option>
             <option value="he">עברית</option>
@@ -27,8 +26,8 @@
     <button type="button" class="btn btn-light" onclick="onAddBook()">+</button>
     <div>
         <form onsubmit="onAddNewBook(event)">
-            <input type="text" placeholder="AddNewBook" name="bookName" /></input>
-            <input type="number" placeholder="price" name="bookprice" min="1"></input>
+            <input type="text" placeholder="Add New Book" name="bookName" /></input>
+            <input type="number" placeholder="Add price" name="bookprice" min="1"></input>
             <button>Save</button>
         </form>
     </div>
